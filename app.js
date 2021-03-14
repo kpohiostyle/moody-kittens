@@ -57,7 +57,6 @@ function loadKittens() {
 }
 
 function deleteKitten(id) {
-  console.log(id)
   let index = kittens.findIndex(kitten => kitten.id == id)
   if (index == -1) {
     throw new Error("Invalid ID")
